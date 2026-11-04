@@ -516,15 +516,15 @@
       <div class="quiz-grid">
         <div class="quiz-card-preview">
           <div>
-            <h3>Case Study A: Mutualism</h3>
-            <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:1rem;">Explore clownfish and sea anemone symbiosis.</p>
+            <h3>Case Study A</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:1rem;">Explore clownfish and sea anemone interactions on a reef.</p>
           </div>
           <button class="btn" onclick="openQuizModal('q1')">Launch Quiz A</button>
         </div>
 
         <div class="quiz-card-preview">
           <div>
-            <h3>Case Study B: Commensalism</h3>
+            <h3>Case Study B</h3>
             <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:1rem;">Observe cattle egrets and grazing mammals.</p>
           </div>
           <button class="btn" onclick="openQuizModal('q2')">Launch Quiz B</button>
@@ -532,24 +532,24 @@
 
         <div class="quiz-card-preview">
           <div>
-            <h3>Case Study C: Parasitism</h3>
-            <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:1rem;">Examine cuckoo brood parasitism behavior.</p>
+            <h3>Case Study C</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:1rem;">Examine bird nesting behavior.</p>
           </div>
           <button class="btn" onclick="openQuizModal('q3')">Launch Quiz C</button>
         </div>
 
         <div class="quiz-card-preview">
           <div>
-            <h3>Case Study D: Herbivory</h3>
-            <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:1rem;">Analyze snowshoe hare browsing dynamics.</p>
+            <h3>Case Study D</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:1rem;">Analyze interactions in the boreal forest.</p>
           </div>
           <button class="btn" onclick="openQuizModal('q4')">Launch Quiz D</button>
         </div>
 
         <div class="quiz-card-preview">
           <div>
-            <h3>Case Study E: Competition</h3>
-            <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:1rem;">Investigate finch foraging competition.</p>
+            <h3>Case Study E</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:1rem;">Investigate finch survival in the Galapagos Islands.</p>
           </div>
           <button class="btn" onclick="openQuizModal('q5')">Launch Quiz E</button>
         </div>
@@ -741,7 +741,7 @@
         },
         scenario: "When both finch species coexist on the same island during droughts, competition for limited medium-sized seeds penalizes both species.",
         mechanismName: "Character Displacement",
-        mechanismDesc: "Natural selection favors individuals with bill sizes that diverge from competing species. Over generations, G. fortis evolved smaller average bill sizes to specialize on small seeds, reducing resource competition overlap."
+        mechanismDesc: "Natural selection favors individuals with bill sizes that diverge from competing species. Over generations, The medium ground finch evolved smaller average bill sizes to specialize on small seeds, reducing resource competition overlap with the large ground finch."
       }
     };
 
@@ -786,7 +786,7 @@
 
     const quizData = {
       q1: {
-        title: "Case Study A: Tropical Reef Observation (Mutualism)",
+        title: "Case Study A: Tropical Reef Observation",
         video: "https://www.youtube-nocookie.com/embed/MUMX7u7v2uY",
         link: "https://www.youtube.com/watch?v=MUMX7u7v2uY",
         transcript: "A small clownfish swims comfortably among the stinging tentacles of a sea anemone. The anemone's nematocysts do not sting the fish due to its protective mucus layer. The clownfish gains protection from larger predators, while aggressively chasing away butterflyfish that attempt to eat the anemone.",
@@ -800,7 +800,7 @@
         correct: "mutualism"
       },
       q2: {
-        title: "Case Study B: Savanna Wildlife Dynamics (Commensalism)",
+        title: "Case Study B: Savanna Wildlife Dynamics",
         video: "https://www.youtube-nocookie.com/embed/LCJazG-_Cds",
         link: "https://www.youtube.com/watch?v=LCJazG-_Cds",
         transcript: "Cattle egrets forage in tall pastures alongside grazing livestock such as water buffalo. As the large mammals walk, their heavy steps flush out hidden insects from the vegetation. The egrets capture these insects with minimal energy expended, while the cattle are neither harmed nor measurably benefitted.",
@@ -814,7 +814,7 @@
         correct: "commensalism"
       },
       q3: {
-        title: "Case Study C: Avian Nest Observation (Parasitism)",
+        title: "Case Study C: Avian Nest Observation",
         video: "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ",
         link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         transcript: "A female cuckoo quietly deposits an egg into a smaller songbird's nest, removing a host egg in the process. The host parent incubates and feeds the larger parasitic chick, which consumes all resources and outcompetes any true offspring.",
@@ -828,7 +828,7 @@
         correct: "parasitism"
       },
       q4: {
-        title: "Case Study D: Boreal Forest Browsing (Herbivory)",
+        title: "Case Study D: Boreal Forest Interactions",
         video: "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ",
         link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         transcript: "During deep winter snows, mammalian herbivores feed heavily on woody plant stems and bark. This consumes vital photosynthetic tissue, reducing plant growth and triggering chemical defense responses.",
@@ -842,7 +842,7 @@
         correct: "herbivory"
       },
       q5: {
-        title: "Case Study E: Island Seed Foraging (Competition)",
+        title: "Case Study E: Galapagos Finches",
         video: "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ",
         link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         transcript: "Two distinct granivorous bird species forage on the exact same limited seed pool during a severe seasonal drought. Each individual's foraging efficiency is reduced due to the presence and consumption rates of the other.",
@@ -1041,11 +1041,11 @@
       `;
 
       const quizLabels = {
-        q1: "Case Study A (Mutualism)",
-        q2: "Case Study B (Commensalism)",
-        q3: "Case Study C (Parasitism)",
-        q4: "Case Study D (Herbivory)",
-        q5: "Case Study E (Competition)"
+        q1: "Case Study A",
+        q2: "Case Study B",
+        q3: "Case Study C",
+        q4: "Case Study D",
+        q5: "Case Study E"
       };
 
       for (let k in quizStats) {
