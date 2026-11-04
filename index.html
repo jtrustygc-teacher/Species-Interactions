@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ecology & Evolutionary Dynamics: Species Interactions Lab</title>
   <style>
-    /* CSS Variables for High-Contrast Theme */
     :root {
       --bg-main: #f8fafc;
       --bg-card: #ffffff;
@@ -22,7 +21,6 @@
       --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     }
 
-    /* Base Reset & Typography */
     *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
@@ -39,7 +37,6 @@
       margin: 0 auto;
     }
 
-    /* Accessibility Focus & Skip Link */
     .skip-link {
       position: absolute;
       top: -40px;
@@ -62,7 +59,6 @@
       outline-offset: 2px;
     }
 
-    /* Header & Navigation */
     header {
       background: var(--bg-card);
       border: 1px solid var(--border);
@@ -114,7 +110,6 @@
       border-color: var(--primary-dark);
     }
 
-    /* Main Sections */
     .tab-panel {
       display: none;
       background: var(--bg-card);
@@ -143,7 +138,6 @@
       margin: 1.2rem 0 0.6rem 0;
     }
 
-    /* Table Styling */
     .table-container {
       overflow-x: auto;
       margin-top: 1rem;
@@ -182,7 +176,6 @@
     .badge-neg { background: #fee2e2; color: #b91c1c; }
     .badge-neu { background: #e2e8f0; color: #475569; }
 
-    /* Button Styling */
     .btn {
       display: inline-flex;
       align-items: center;
@@ -204,14 +197,6 @@
       background: var(--primary-dark);
     }
 
-    .btn-secondary {
-      background: var(--accent);
-    }
-
-    .btn-secondary:hover {
-      background: var(--accent-dark);
-    }
-
     .btn-link {
       background: none;
       color: var(--accent-dark);
@@ -227,7 +212,6 @@
       color: var(--primary-dark);
     }
 
-    /* Video Case Studies / Quiz Grid */
     .quiz-card {
       background: #f8fafc;
       border: 1px solid var(--border);
@@ -238,7 +222,7 @@
 
     .video-container {
       position: relative;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
       margin-bottom: 1rem;
@@ -300,7 +284,6 @@
       color: #7f1d1d;
     }
 
-    /* Modal Dialog */
     .modal-backdrop {
       display: none;
       position: fixed;
@@ -351,7 +334,6 @@
       background: #e2e8f0;
     }
 
-    /* Organism Photo Grid in Modal */
     .organism-photos {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -388,7 +370,6 @@
       padding: 0.5rem;
     }
 
-    /* Evolutionary Infographics & Simulator */
     .sim-controls {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -406,11 +387,6 @@
       gap: 0.3rem;
     }
 
-    .sim-control-group label {
-      font-size: 0.9rem;
-      font-weight: 600;
-    }
-
     .chart-container {
       position: relative;
       width: 100%;
@@ -418,7 +394,6 @@
       margin: 1.5rem 0;
     }
 
-    /* Screen Reader Live Region */
     .sr-only {
       position: absolute;
       width: 1px;
@@ -468,7 +443,6 @@
 
   <main id="main-content" tabindex="-1">
 
-    <!-- TAB 1: OVERVIEW & REAL-WORLD EXAMPLES -->
     <section id="panel-1" class="tab-panel active" role="tabpanel" aria-labelledby="tab-1">
       <h2>Overview of Species Interactions</h2>
       <p>In ecology, interspecific interactions describe how individual species within a community influence each other's fitness, survival, and reproduction. Select any <strong>Real World Example</strong> in the table below to open a detailed modal showing photos of both species, the interaction scenario, and the evolutionary mechanism driving trait adaptation over time.</p>
@@ -533,12 +507,10 @@
       </div>
     </section>
 
-    <!-- TAB 2: VIDEO CASE STUDIES QUIZ -->
     <section id="panel-2" class="tab-panel" role="tabpanel" aria-labelledby="tab-2">
       <h2>Video Case Studies: Identify the Relationship</h2>
-      <p>Watch each short video clip (under 1 minute) below. Apply your understanding of ecologically mediated fitness outcomes to identify the correct interaction type for each case study.</p>
+      <p>Watch each short video clip below. Apply your understanding of ecologically mediated fitness outcomes to identify the correct interaction type for each case study.</p>
 
-      <!-- Quiz Item 1 -->
       <article class="quiz-card">
         <h3>Case Study A: Tropical Reef Observation</h3>
         <div class="video-container">
@@ -550,7 +522,7 @@
             allowfullscreen>
           </iframe>
         </div>
-        <p><a href="https://www.youtube.com/watch?Q0B_U5pM-2E" target="_blank" rel="noopener noreferrer" class="btn-link">Watch Video directly on YouTube (Opens in new tab)</a></p>
+        <p><a href="https://www.youtube.com/watch?v=Q0B_U5pM-2E" target="_blank" rel="noopener noreferrer" class="btn-link">Watch Video directly on YouTube (Opens in new tab)</a></p>
         <details>
           <summary>Read Video Transcript & Context</summary>
           <p style="margin-top:0.5rem;">A small clownfish swims comfortably among the stinging tentacles of a sea anemone. The anemone's nematocysts do not sting the fish due to its protective mucus layer. The clownfish gains protection from larger predators, while aggressively chasing away butterflyfish that attempt to eat the anemone.</p>
@@ -571,7 +543,6 @@
         <div id="q1-feedback" class="feedback-box" role="status" aria-live="polite"></div>
       </article>
 
-      <!-- Quiz Item 2 -->
       <article class="quiz-card">
         <h3>Case Study B: Savanna Wildlife Dynamics</h3>
         <div class="video-container">
@@ -583,7 +554,7 @@
             allowfullscreen>
           </iframe>
         </div>
-        <p><a href="https://www.youtube.com/watch?2_3P18O2a90" target="_blank" rel="noopener noreferrer" class="btn-link">Watch Video directly on YouTube (Opens in new tab)</a></p>
+        <p><a href="https://www.youtube.com/watch?v=2_3P18O2a90" target="_blank" rel="noopener noreferrer" class="btn-link">Watch Video directly on YouTube (Opens in new tab)</a></p>
         <details>
           <summary>Read Video Transcript & Context</summary>
           <p style="margin-top:0.5rem;">Cattle egrets forage in tall pastures alongside grazing livestock such as water buffalo. As the large mammals walk, their heavy steps flush out hidden insects from the vegetation. The egrets capture these insects with minimal energy expended, while the cattle are neither harmed nor measurably benefitted.</p>
@@ -605,7 +576,6 @@
       </article>
     </section>
 
-    <!-- TAB 3: EVOLUTIONARY TRAJECTORY SIMULATOR -->
     <section id="panel-3" class="tab-panel" role="tabpanel" aria-labelledby="tab-3">
       <h2>Coevolutionary Trajectory Simulator</h2>
       <p>Species interactions act as key agents of natural selection. Use this simulator to model how coevolutionary pressures alter trait distributions over successive generations.</p>
@@ -635,15 +605,11 @@
         <canvas id="simCanvas" width="800" height="300" aria-label="Line graph plotting mean trait values of Species A and Species B over generations." role="img"></canvas>
       </div>
 
-      <div id="sim-explanation" style="background:#f1f5f9; padding:1rem; border-radius:var(--radius); border-left:4px solid var(--primary);">
-        <!-- Filled by JS -->
-      </div>
+      <div id="sim-explanation" style="background:#f1f5f9; padding:1rem; border-radius:var(--radius); border-left:4px solid var(--primary);"></div>
     </section>
 
-    <!-- TAB 4: LAB REPORT & ACCESSIBILITY AUDIT -->
     <section id="panel-4" class="tab-panel" role="tabpanel" aria-labelledby="tab-4">
       <h2>Lab Summary Report & Accessibility Verification</h2>
-      
       <p>Fill out your summary reflections below to export a formatted lab summary report.</p>
 
       <form onsubmit="event.preventDefault(); generateReport();">
@@ -660,9 +626,7 @@
         <button type="submit" class="btn">Generate Printable Summary</button>
       </form>
 
-      <div id="report-output" style="margin-top:1.5rem; display:none; background:#f8fafc; padding:1rem; border:1px solid var(--border); border-radius:var(--radius);">
-        <!-- Report output -->
-      </div>
+      <div id="report-output" style="margin-top:1.5rem; display:none; background:#f8fafc; padding:1rem; border:1px solid var(--border); border-radius:var(--radius);"></div>
 
       <hr style="margin:2rem 0; border:none; border-top:1px solid var(--border);" />
 
@@ -677,27 +641,19 @@
 
   </main>
 
-  <!-- MODAL DIALOG FOR REAL WORLD EXAMPLES -->
   <div id="example-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
     <div class="modal-content">
       <button class="modal-close" onclick="closeExampleModal()" aria-label="Close modal dialog">&times;</button>
       <h2 id="modal-title" style="margin-bottom:1rem;">Real World Example</h2>
 
-      <!-- Organism Photos Grid -->
-      <div id="modal-photos" class="organism-photos">
-        <!-- Injected via JS -->
-      </div>
-
-      <div id="modal-body">
-        <!-- Injected via JS -->
-      </div>
+      <div id="modal-photos" class="organism-photos"></div>
+      <div id="modal-body"></div>
     </div>
   </div>
 
   <div id="sr-announcer" class="sr-only" aria-live="polite"></div>
 
   <script>
-    /* TAB SYSTEM */
     const tabs = document.querySelectorAll('[role="tab"]');
     const panels = document.querySelectorAll('[role="tabpanel"]');
 
@@ -710,43 +666,40 @@
         const activePanel = document.getElementById(tab.getAttribute('aria-controls'));
         activePanel.classList.add('active');
 
-        // Announce tab change for screen readers
         document.getElementById('sr-announcer').textContent = `Switched to tab: ${tab.textContent.trim()}`;
 
-        // Re-render chart if tab 3 becomes active
         if (tab.id === 'tab-3') {
           runSimulation();
         }
       });
     });
 
-    /* REAL WORLD EXAMPLE MODAL DATA */
     const exampleData = {
       mutualism: {
         title: "Mutualism: Bluestreak Cleaner Wrasse & Coral Reef Fish",
         speciesA: {
-          name: "Bluestreak Cleaner Wrasse (Labroides dimidiatus)",
+          name: "Bluestreak Cleaner Wrasse",
           img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Labroides_dimidiatus_Red_Sea.jpg/640px-Labroides_dimidiatus_Red_Sea.jpg",
           desc: "Specialized cleaner fish that consumes ectoparasites off larger client fish."
         },
         speciesB: {
-          name: "Client Fish (e.g., Coral Groupers)",
+          name: "Client Fish (Coral Groupers)",
           img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Epinephelus_striatus.jpg/640px-Epinephelus_striatus.jpg",
           desc: "Reef species visiting dedicated 'cleaning stations' for ectoparasite removal."
         },
         scenario: "Cleaner wrasses establish fixed cleaning stations on coral reefs. Client fish visit these stations and pose motionless, allowing wrasses to pick off parasitic gnathiid isopods from their skin, gills, and mouths.",
         mechanismName: "Coadaptation & Reciprocal Behavioral Evolution",
-        mechanismDesc: "Clients evolved specialized courtship-like signaling behaviors to suppress predatory instincts when approaching wrasses. Cleaner wrasses evolved distinctive bright blue coloration and tactile dancing to communicate cleaning services, directly improving parasite-free client longevity and cleaner nutritional intake."
+        mechanismDesc: "Clients evolved specialized courtship-like signaling behaviors to suppress predatory instincts when approaching wrasses. Cleaner wrasses evolved distinctive bright blue coloration and tactile dancing to communicate cleaning services."
       },
       commensalism: {
         title: "Commensalism: Barnacles & Humpback Whales",
         speciesA: {
-          name: "Coronulid Barnacle (Coronula diadema)",
+          name: "Coronulid Barnacle",
           img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Coronula_diadema.jpg/640px-Coronula_diadema.jpg",
           desc: "Sessile crustacean that embeds its shell into cetacean skin."
         },
         speciesB: {
-          name: "Humpback Whale (Megaptera novaeangliae)",
+          name: "Humpback Whale",
           img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Humpback_Whale_underwater_shot.jpg/640px-Humpback_Whale_underwater_shot.jpg",
           desc: "Large baleen whale traveling across nutrient-rich ocean currents."
         },
@@ -757,12 +710,12 @@
       parasitism: {
         title: "Brood Parasitism: Common Cuckoo & Reed Warbler",
         speciesA: {
-          name: "Common Cuckoo (Cuculus canorus)",
+          name: "Common Cuckoo",
           img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Cuculus_canorus_vogelpark_niendorf.jpg/640px-Cuculus_canorus_vogelpark_niendorf.jpg",
           desc: "Obligate brood parasite laying eggs in host nests."
         },
         speciesB: {
-          name: "Eurasian Reed Warbler (Acrocephalus scirpaceus)",
+          name: "Eurasian Reed Warbler",
           img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Acrocephalus_scirpaceus_1_%28Marek_Szczepanek%29.jpg/640px-Acrocephalus_scirpaceus_1_%28Marek_Szczepanek%29.jpg",
           desc: "Songbird host rearing nestlings."
         },
@@ -773,28 +726,28 @@
       herbivory: {
         title: "Herbivory: Snowshoe Hare & White Spruce",
         speciesA: {
-          name: "Snowshoe Hare (Lepus americanus)",
+          name: "Snowshoe Hare",
           img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Snowshoe_Hare%2C_J.N._%22Ding%22_Darling_National_Wildlife_Refuge.jpg/640px-Snowshoe_Hare%2C_J.N._%22Ding%22_Darling_National_Wildlife_Refuge.jpg",
           desc: "Herbivorous mammal feeding on woody shoots during boreal winters."
         },
         speciesB: {
-          name: "White Spruce (Picea glauca)",
+          name: "White Spruce",
           img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Picea_glauca_Taiga.jpg/640px-Picea_glauca_Taiga.jpg",
           desc: "Coniferous tree synthesizing chemical deterrents."
         },
         scenario: "During winter, snowshoe hares feed extensively on the twigs and bark of white spruce seedlings, removing photosynthetic mass and impacting tree survival.",
         mechanismName: "Inducible Chemical Defense & Detoxification Evolution",
-        mechanismDesc: "Intense browsing selects for spruce trees capable of synthesizing resinous terpene compounds (e.g., camphor) to deter browsing. In turn, hare populations face selection for metabolic enzymes capable of detoxifying plant secondary metabolites."
+        mechanismDesc: "Intense browsing selects for spruce trees capable of synthesizing resinous terpene compounds to deter browsing. In turn, hare populations face selection for metabolic enzymes capable of detoxifying plant secondary metabolites."
       },
       competition: {
         title: "Interspecific Competition: Galápagos Ground Finches",
         speciesA: {
-          name: "Medium Ground Finch (Geospiza fortis)",
+          name: "Medium Ground Finch",
           img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Geospiza_fortis.jpg/640px-Geospiza_fortis.jpg",
           desc: "Finch species feeding on small-to-medium seeds."
         },
         speciesB: {
-          name: "Large Ground Finch (Geospiza magnirostris)",
+          name: "Large Ground Finch",
           img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Geospiza_magnirostris.jpg/640px-Geospiza_magnirostris.jpg",
           desc: "Competitor finch species with a massive beak for cracking hard seeds."
         },
@@ -816,7 +769,7 @@
         },
         scenario: "Fungal hyphae expand deep into soil pores to absorb inorganic phosphorus and nitrogen, delivering nutrients directly to plant roots in exchange for plant carbon photosynthates.",
         mechanismName: "Symbiogenesis & Mutual Recognition Systems",
-        mechanismDesc: "Plants and fungi coevolved intricate molecular signaling pathways (SYM pathway) enabling roots to recognize beneficial fungi without mounting an immune defense, dramatically increasing terrestrial plant colonizing success."
+        mechanismDesc: "Plants and fungi coevolved intricate molecular signaling pathways enabling roots to recognize beneficial fungi without mounting an immune defense, dramatically increasing terrestrial plant colonizing success."
       }
     };
 
@@ -826,7 +779,6 @@
 
       document.getElementById('modal-title').textContent = data.title;
       
-      // Inject Photos
       document.getElementById('modal-photos').innerHTML = `
         <div class="organism-card">
           <img src="${data.speciesA.img}" alt="Photo of ${data.speciesA.name}" />
@@ -840,7 +792,6 @@
         </div>
       `;
 
-      // Inject Details
       document.getElementById('modal-body').innerHTML = `
         <div style="background:#f8fafc; padding:1rem; border-radius:var(--radius); border:1px solid var(--border); margin-bottom:1rem;">
           <h3 style="margin-top:0;">Interaction Scenario</h3>
@@ -861,12 +812,10 @@
       document.getElementById('example-modal').classList.remove('active');
     }
 
-    // Close modal on Escape key
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeExampleModal();
     });
 
-    /* QUIZ SYSTEM */
     function checkQuiz(qId, correctAnswer) {
       const selected = document.querySelector(`input[name="${qId}"]:checked`);
       const feedbackEl = document.getElementById(`${qId}-feedback`);
@@ -882,7 +831,6 @@
       }
     }
 
-    /* SIMULATOR CANVAS SYSTEM */
     function runSimulation() {
       const canvas = document.getElementById('simCanvas');
       if (!canvas) return;
@@ -893,7 +841,6 @@
 
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Draw Axes
       ctx.strokeStyle = '#cbd5e1';
       ctx.lineWidth = 2;
       ctx.beginPath();
@@ -902,13 +849,11 @@
       ctx.lineTo(770, 250);
       ctx.stroke();
 
-      // Axis Labels
       ctx.fillStyle = '#0f172a';
       ctx.font = '12px sans-serif';
       ctx.fillText('Mean Trait Value', 10, 15);
       ctx.fillText('Generations (0 to ' + genCount + ')', 350, 285);
 
-      // Calculate Data Points
       let pointsA = [];
       let pointsB = [];
 
@@ -922,7 +867,7 @@
         } else if (model === 'displacement') {
           valA = 70 + (progress * 80 * intensity);
           valB = 70 - (progress * 50 * intensity);
-        } else { // mutualism
+        } else {
           valA = 40 + (progress * 90 * intensity);
           valB = 40 + (progress * 90 * intensity);
         }
@@ -935,7 +880,6 @@
         pointsB.push({x, y: yB});
       }
 
-      // Draw Line Species A
       ctx.strokeStyle = '#15803d';
       ctx.lineWidth = 3;
       ctx.beginPath();
@@ -945,7 +889,6 @@
       });
       ctx.stroke();
 
-      // Draw Line Species B
       ctx.strokeStyle = '#0284c7';
       ctx.lineWidth = 3;
       ctx.beginPath();
@@ -955,7 +898,6 @@
       });
       ctx.stroke();
 
-      // Legend
       ctx.fillStyle = '#15803d';
       ctx.fillRect(600, 30, 15, 15);
       ctx.fillText('Species A', 622, 42);
@@ -964,7 +906,6 @@
       ctx.fillRect(600, 55, 15, 15);
       ctx.fillText('Species B', 622, 67);
 
-      // Update Explanation text
       const expEl = document.getElementById('sim-explanation');
       if (model === 'arms_race') {
         expEl.innerHTML = "<strong>Arms Race Dynamics:</strong> As Species A (Predator) evolves increased attack efficiency, selection forces Species B (Prey) to escalate defensive traits, resulting in reciprocal trait increases.";
@@ -979,7 +920,6 @@
       runSimulation();
     }
 
-    /* LAB REPORT GENERATOR */
     function generateReport() {
       const name = document.getElementById('student-name').value;
       const text = document.getElementById('reflection-text').value;
@@ -996,7 +936,6 @@
       `;
     }
 
-    // Initial simulation run on load
     window.addEventListener('DOMContentLoaded', () => {
       runSimulation();
     });
